@@ -9,7 +9,7 @@ app.use(express.json());
 
 // Test API
 app.get("/", (req, res) => {
-  res.send("Backend is running 🚀");
+  res.send("Backend is running fine 🚀");
 });
 
 // Sample API for frontend

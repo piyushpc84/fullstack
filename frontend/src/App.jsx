@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("Loading...");
 
   useEffect(() => {
-    fetch("http://3.110.115.93:5000/api/message")  // ← Changed this line
+    fetch("http://backend:5000/api/message")  // ← Changed this line
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
       .catch((err) => {
